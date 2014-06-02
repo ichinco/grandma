@@ -64,6 +64,11 @@
           </executions>
           <configuration>
               <mainClass>grandma.App</mainClass>
+              <arguments>
+                  <argument>${phoneNumber}</argument>
+                  <argument>${from}</argument>
+                  <argument>${to}</argument>
+              </arguments>
           </configuration>
         </plugin>
       </plugins>

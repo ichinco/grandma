@@ -9,4 +9,4 @@ twilio.token=for sms service
 
 run using 
 mvn clean insall
-mvn exec:java -Dexec.mainClass=grandma.App
+mvn exec:java -Dexec.mainClass=grandma.App -DphoneNumber=whatever -Dfrom="" -Dto=""

@@ -38,6 +38,7 @@ public class App
     }
 
     public void run() throws TwilioRestException {
+//        Response response = directions.getTimeToDestination("65 East Leuning St, South Hackensack, NJ", "25 Fifth Avenue, Haskell, NJ");
         Response response = directions.getTimeToDestination(fromAddress, toAddress);
         for (Route r : response.getRoutes()) {
             if (r.getLegs().size() == 1) {
